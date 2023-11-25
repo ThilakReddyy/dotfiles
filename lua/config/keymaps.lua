@@ -40,12 +40,26 @@ keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
 
 --Resize window
-keymap.set("n", "<C-w><left>", "<C-w><")
-keymap.set("n", "<C-w><right>", "<C-w>>")
-keymap.set("n", "<C-w><up>", "<C-w>+")
-keymap.set("n", "<C-w><down>", "<C-w>-")
+keymap.set("n", "<C-S-left>", "<C-w><")
+keymap.set("n", "<C-S-right>", "<C-w>>")
+keymap.set("n", "<C-S-up>", "<C-w>+")
+keymap.set("n", "<C-S-down>", "<C-w>-")
 
 --Diagnotics
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
 end, opts)
+
+function Toggle_terminal()
+  -- Split the current window horizontally
+  vim.cmd("split")
+
+  -- Open the terminal in the new split
+  vim.cmd("terminal")
+
+  -- Set the height of the terminal window (adjust the value as needed)
+  vim.cmd("resize 14")
+end
+
+-- Map a key to toggle the terminal
+vim.api.nvim_set_keymap("n", "<Leader>t", "<cmd>lua Toggle_terminal()<CR>", { noremap = true, silent = true })
