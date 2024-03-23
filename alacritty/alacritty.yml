@@ -1,0 +1,73 @@
+window:
+  opacity: 0.95
+font:
+  normal:
+    family: FiraCode Nerd Font Mono
+    style: Regular
+
+  bold:
+    family: FiraCode Nerd Font Mono
+    style: Bold
+
+  italic:
+    family: FiraCode Nerd Font Mono
+    style: Italic
+
+  bold_italic:
+    family: FiraCode Nerd Font Mono
+    style: Bold Italic
+
+  size: 10.5
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history > 0).
+  multiplier: 10
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+selection:
+  semantic_escape_chars: ',│`|:"'' ()[]{}<>'
+  save_to_clipboard: true
+
+live_config_reload: true
+cursor:
+  # Cursor style
+  style:
+    blinking: Never
+
+# key_bindings:
+## Vi Mode
+# - { key: Space, mods: Control, action: ToggleViMode }
+# BEGIN ACE
+colors:
+  primary:
+    background: "#121519"
+    foreground: "#cbe4ef"
+  cursor:
+    text: "#121519"
+    cursor: "#cbe4ef"
+  normal:
+    black: "#121519"
+    red: "#AD9D5B"
+    green: "#637382"
+    yellow: "#AD739A"
+    blue: "#69B2C1"
+    magenta: "#BDA3B9"
+    cyan: "#D996AF"
+    white: "#cbe4ef"
+  bright:
+    black: "#8e9fa7"
+    red: "#AD9D5B"
+    green: "#637382"
+    yellow: "#AD739A"
+    blue: "#69B2C1"
+    magenta: "#BDA3B9"
+    cyan: "#D996AF"
+    white: "#cbe4ef"
+# END ACE
+

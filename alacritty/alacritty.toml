@@ -1,0 +1,66 @@
+live_config_reload = true
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#000000"
+blue = "#69B2C1"
+cyan = "#D996AF"
+green = "#637382"
+magenta = "#BDA3B9"
+red = "#AD9D5B"
+white = "#cbe4ef"
+yellow = "#AD739A"
+
+[colors.cursor]
+cursor = "#cbe4ef"
+text = "#121519"
+
+[colors.normal]
+black = "#121519"
+blue = "#69B2C1"
+cyan = "#D996AF"
+green = "#637382"
+magenta = "#BDA3B9"
+red = "#AD9D5B"
+white = "#cbe4ef"
+yellow = "#AD739A"
+
+[colors.primary]
+background = "#121519"
+foreground = "#cbe4ef"
+
+[cursor.style]
+blinking = "Never"
+
+[font]
+size = 10.5
+
+[font.bold]
+family = "FiraCode Nerd Font Mono"
+style = "Bold"
+
+[font.bold_italic]
+family = "FiraCode Nerd Font Mono"
+style = "Bold Italic"
+
+[font.italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+style = "Regular"
+
+[scrolling]
+history = 10000
+multiplier = 10
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[window]
+opacity = 0.95
+startup_mode = "Fullscreen"
